@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: white;
+            padding: 20px 0;
+        }
+        .logo {
+            color: #8e44ad;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            float: right;
+        }
+        nav a {
+            color: #333;
+            text-decoration: black;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .hero {
+            background-color: #1abc9c;
+            color: white;
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero-image {
+            flex: 1;
+            text-align: right;
+            
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+        .destinations {
+            padding: 50px 0;
+        }
+        .destinations h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #8e44ad;
+        }
+        .form1 h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #8e44ad;
+        }
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .destination-grid1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .destination-box {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .destination-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .destination-box h3 {
+            padding: 20px;
+            margin: 0;
+        }
+        .destination-box p {
+            padding: 0 20px 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #8e44ad;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px;
+        }
+        .orgform h2{
+            margin:10;
+        }
+        .form2{
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contact-form h1 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .contact-form input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">explorer</div>
+            <nav>
+                <a href="#">Hotels</a>
+                <a href="#">Bike Rentals</a>
+                <a href="#">Restaurants</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Adventure Travel Expert in the SOUTH</h1>
+                <a href="#" class="btn">EXPLORE</a>
+            </div>
+            <div class="hero-image">
+                <img src="./images/Madurai_Teppakulam_illuminated.jpg" alt="Adventure traveler on motorcycle">
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <div class="container">
+            <h2>Destinations</h2>
+            <p>Just for you. Because you and your bike are special to us!</p>
+            <div class="destination-grid">
+                <div class="destination-box">
+                    <img src="./images/village.png" alt="Paddy Fields">
+                    <h3>Never Ending Paddy Fields and Narrow Roads</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="btn">READ MORE</a>
+                </div>
+                <div class="destination-box">
+                    <img src="./images/ride.png" alt="Small Ride">
+                    <h3>Small Ride across town in mid summer heat</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="btn">READ MORE</a>
+                </div>
+                <div class="destination-box">
+                    <img src="./images/flow.png" alt="Lotus Pond">
+                    <h3>Catching a Short Break at the Lotus Pond</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="btn">READ MORE</a>
+                </div>
+            </div>
+            <div class="destination-grid1">
+                <div class="destination-box">
+                    <img src="./images/village.png" alt="Paddy Fields">
+                    <h3>Never Ending Paddy Fields and Narrow Roads</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="btn">READ MORE</a>
+                </div>
+                <div class="destination-box">
+                    <img src="./images/ride.png" alt="Small Ride">
+                    <h3>Small Ride across town in mid summer heat</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="btn">READ MORE</a>
+                </div>
+                <div class="destination-box">
+                    <img src="./images/flow.png" alt="Lotus Pond">
+                    <h3>Catching a Short Break at the Lotus Pond</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="btn">READ MORE</a>
+                </div>
+            
+        </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <div class="form1">
+                <h2>CONTACT ME</h2>
+            </div>
+        </footer>
+    </section>
+
+        <section>
+            <div class="form2">
+                <div class="contact-form">
+                    <form action="submit_form.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+            
+                        <label for="place">Place of Living:</label>
+                        <input type="text" id="place" name="place" required>
+            
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+            
+            
+    </section>
+</body>
+</html>
